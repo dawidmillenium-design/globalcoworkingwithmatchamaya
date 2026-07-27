@@ -141,7 +141,7 @@
   <script>
     const container = document.getElementById('post-container');
 
-    // Fetch directory listing and dynamically generate links
+    // Fetch directory listing and dynamically generate links with titles from each HTML file
     async function loadAllPages() {
       try {
         // Use fetch to get the directory index
@@ -156,89 +156,60 @@
         
         links.forEach(link => {
           const fileName = link.getAttribute('href');
-          // Skip index.html and any non-journey files
+          // Skip index.html
           if (fileName !== 'index.html' && fileName.includes('.html')) {
-            // Create a readable title from the filename
-            let title = fileName
-              .replace(/\.html$/, '')
-              .replace(/^\d+-/, '') // Remove leading numbers
-              .replace(/matcha-maya-/g, '')
-              .replace(/-coworking-customer-journey$/g, '')
-              .split('-')
-              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' ');
-            
-            pages.push({ file: fileName, title: title });
+            pages.push(fileName);
           }
         });
 
         // Sort pages by filename (numeric order)
-        pages.sort((a, b) => a.file.localeCompare(b.file, undefined, { numeric: true }));
+        pages.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
-        // Populate the list
-        pages.forEach(page => {
-          const li = document.createElement('li');
-          li.className = 'post-item';
-          li.setAttribute('data-title', page.title.toLowerCase());
+        // Fetch title from each HTML file and create links
+        let loadedCount = 0;
+        for (const fileName of pages) {
+          try {
+            const pageResponse = await fetch(fileName);
+            const pageHtml = await pageResponse.text();
+            
+            // Extract title from the HTML
+            const titleMatch = pageHtml.match(/<title>(.*?)<\/title>/i);
+            const title = titleMatch ? titleMatch[1] : fileName.replace(/\.html$/, '');
+            
+            loadedCount++;
+            
+            const li = document.createElement('li');
+            li.className = 'post-item';
+            li.setAttribute('data-title', title.toLowerCase());
 
-          const a = document.createElement('a');
-          a.className = 'post-link';
-          a.href = page.file;
-          a.textContent = page.title;
+            const a = document.createElement('a');
+            a.className = 'post-link';
+            a.href = fileName;
+            a.textContent = title;
 
-          li.appendChild(a);
-          container.appendChild(li);
-        });
+            li.appendChild(a);
+            container.appendChild(li);
+          } catch (err) {
+            console.warn(`Failed to load ${fileName}:`, err);
+          }
+        }
 
         // Update header with total count
         const subtitle = document.querySelector('p.subtitle');
-        subtitle.textContent = `Exploring workspace culture across ${pages.length} global coworking spaces with MATCHA MAYA.`;
+        subtitle.textContent = `Exploring workspace culture across ${loadedCount} global coworking spaces with MATCHA MAYA.`;
 
       } catch (error) {
-        // Fallback: Use static list if fetch fails (for some hosting setups)
-        console.log('Auto-crawl failed, using static list:', error);
-        loadStaticPages();
-      }
-    }
-
-    // Fallback: Static list of all 20 current pages
-    function loadStaticPages() {
-      const PAGES = [
-        { file: '001-matcha-maya-jakarta-coworking-customer-journey.html', title: 'Jakarta - Coworking Customer Journey' },
-        { file: '002-matcha-maya-dhaka-coworking-customer-journey.html', title: 'Dhaka - Coworking Customer Journey' },
-        { file: '003-matcha-maya-tokyo-coworking-customer-journey.html', title: 'Tokyo - Coworking Customer Journey' },
-        { file: '004-matcha-maya-new-delhi-coworking-customer-journey.html', title: 'New Delhi - Coworking Customer Journey' },
-        { file: '005-matcha-maya-shanghai-coworking-customer-journey.html', title: 'Shanghai - Coworking Customer Journey' },
-        { file: '006-matcha-maya-guangzhou-coworking-customer-journey.html', title: 'Guangzhou - Coworking Customer Journey' },
-        { file: '007-matcha-maya-cairo-coworking-customer-journey.html', title: 'Cairo - Coworking Customer Journey' },
-        { file: '008-matcha-maya-manila-coworking-customer-journey.html', title: 'Manila - Coworking Customer Journey' },
-        { file: '009-matcha-maya-kolkata-coworking-customer-journey.html', title: 'Kolkata - Coworking Customer Journey' },
-        { file: '010-matcha-maya-seoul-coworking-customer-journey.html', title: 'Seoul - Coworking Customer Journey' },
-        { file: '011-matcha-maya-karachi-coworking-customer-journey.html', title: 'Karachi - Coworking Customer Journey' },
-        { file: '012-matcha-maya-mumbai-coworking-customer-journey.html', title: 'Mumbai - Coworking Customer Journey' },
-        { file: '013-matcha-maya-sao-paulo-coworking-customer-journey.html', title: 'São Paulo - Coworking Customer Journey' },
-        { file: '014-matcha-maya-bangkok-coworking-customer-journey.html', title: 'Bangkok - Coworking Customer Journey' },
-        { file: '015-matcha-maya-mexico-city-coworking-customer-journey.html', title: 'Mexico City - Coworking Customer Journey' },
-        { file: '016-matcha-maya-beijing-coworking-customer-journey.html', title: 'Beijing - Coworking Customer Journey' },
-        { file: '017-matcha-maya-lahore-coworking-customer-journey.html', title: 'Lahore - Coworking Customer Journey' },
-        { file: '018-matcha-maya-istanbul-coworking-customer-journey.html', title: 'Istanbul - Coworking Customer Journey' },
-        { file: '019-matcha-maya-moscow-coworking-customer-journey.html', title: 'Moscow - Coworking Customer Journey' },
-        { file: '020-matcha-maya-ho-chi-minh-city-coworking-customer-journey.html', title: 'Ho Chi Minh City - Coworking Customer Journey' },
-      ];
-
-      PAGES.forEach(page => {
+        console.error('Failed to load pages:', error);
+        // Fallback message
         const li = document.createElement('li');
         li.className = 'post-item';
-        li.setAttribute('data-title', page.title.toLowerCase());
-
-        const a = document.createElement('a');
-        a.className = 'post-link';
-        a.href = page.file;
-        a.textContent = page.title;
-
-        li.appendChild(a);
+        const span = document.createElement('span');
+        span.className = 'post-link';
+        span.style.color = '#999';
+        span.textContent = 'Unable to load pages. Please check back later.';
+        li.appendChild(span);
         container.appendChild(li);
-      });
+      }
     }
 
     // Load pages on page load
