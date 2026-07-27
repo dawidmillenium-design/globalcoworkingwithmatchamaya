@@ -139,25 +139,46 @@
   </footer>
 
   <script>
-    // Set total posts count
-    const TOTAL_POSTS = 220;
+    // List of all HTML pages (excluding index.html)
+    const PAGES = [
+      { file: '001-matcha-maya-jakarta-coworking-customer-journey.html', title: 'Jakarta - Coworking Customer Journey' },
+      { file: '002-matcha-maya-dhaka-coworking-customer-journey.html', title: 'Dhaka - Coworking Customer Journey' },
+      { file: '003-matcha-maya-tokyo-coworking-customer-journey.html', title: 'Tokyo - Coworking Customer Journey' },
+      { file: '004-matcha-maya-new-delhi-coworking-customer-journey.html', title: 'New Delhi - Coworking Customer Journey' },
+      { file: '005-matcha-maya-shanghai-coworking-customer-journey.html', title: 'Shanghai - Coworking Customer Journey' },
+      { file: '006-matcha-maya-guangzhou-coworking-customer-journey.html', title: 'Guangzhou - Coworking Customer Journey' },
+      { file: '007-matcha-maya-cairo-coworking-customer-journey.html', title: 'Cairo - Coworking Customer Journey' },
+      { file: '008-matcha-maya-manila-coworking-customer-journey.html', title: 'Manila - Coworking Customer Journey' },
+      { file: '009-matcha-maya-kolkata-coworking-customer-journey.html', title: 'Kolkata - Coworking Customer Journey' },
+      { file: '010-matcha-maya-seoul-coworking-customer-journey.html', title: 'Seoul - Coworking Customer Journey' },
+      { file: '011-matcha-maya-karachi-coworking-customer-journey.html', title: 'Karachi - Coworking Customer Journey' },
+      { file: '012-matcha-maya-mumbai-coworking-customer-journey.html', title: 'Mumbai - Coworking Customer Journey' },
+      { file: '013-matcha-maya-sao-paulo-coworking-customer-journey.html', title: 'São Paulo - Coworking Customer Journey' },
+      { file: '014-matcha-maya-bangkok-coworking-customer-journey.html', title: 'Bangkok - Coworking Customer Journey' },
+      { file: '015-matcha-maya-mexico-city-coworking-customer-journey.html', title: 'Mexico City - Coworking Customer Journey' },
+      { file: '016-matcha-maya-beijing-coworking-customer-journey.html', title: 'Beijing - Coworking Customer Journey' },
+      { file: '017-matcha-maya-lahore-coworking-customer-journey.html', title: 'Lahore - Coworking Customer Journey' },
+      { file: '018-matcha-maya-istanbul-coworking-customer-journey.html', title: 'Istanbul - Coworking Customer Journey' },
+      { file: '019-matcha-maya-moscow-coworking-customer-journey.html', title: 'Moscow - Coworking Customer Journey' },
+      { file: '020-matcha-maya-ho-chi-minh-city-coworking-customer-journey.html', title: 'Ho Chi Minh City - Coworking Customer Journey' },
+    ];
+
     const container = document.getElementById('post-container');
 
-    // Populate post list
-    for (let i = 1; i <= TOTAL_POSTS; i++) {
+    // Populate post list with actual HTML files
+    PAGES.forEach(page => {
       const li = document.createElement('li');
       li.className = 'post-item';
+      li.setAttribute('data-title', page.title.toLowerCase());
 
       const a = document.createElement('a');
       a.className = 'post-link';
-      
-      // Update this pattern if your files are named differently (e.g., 'post-1.html' or '1.html')
-      a.href = `post-${i}.html`;
-      a.textContent = `Global Coworking & Remote Hubs - Edition #${i}`;
+      a.href = page.file;
+      a.textContent = page.title;
 
       li.appendChild(a);
       container.appendChild(li);
-    }
+    });
 
     // Instant live search filter
     function filterPosts() {
