@@ -3,297 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Coworking with Matcha</title>
+  <title>Global Coworking with Matcha Maya - Master Index</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #2e7d32, #66bb6a);
-      color: #fff;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary: #2e7d32;
+      --primary-light: #e8f5e9;
+      --text: #1f2937;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
     }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+
     .container {
       max-width: 1000px;
-      margin: 40px auto;
-      background: #f9f9f9;
-      color: #333;
-      border-radius: 10px;
-      padding: 30px;
+      margin: 0 auto;
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     h1 {
-      text-align: center;
-      color: #2e7d32;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
     }
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
+
+    p.subtitle {
+      color: #6b7280;
+      font-size: 1.1rem;
     }
-    .stat-box {
-      background: #e8f5e9;
+
+    .search-box {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 20px;
+      margin: 0 auto 2rem auto;
+      display: block;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-item {
+      background: var(--card-bg);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
       text-align: center;
-      width: 30%;
     }
-    .post-index {
-      margin-top: 30px;
+
+    .stat-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
     }
+
     .post-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
     }
-    a.post-link {
-      display: block;
-      background: #c8e6c9;
-      padding: 10px;
-      border-radius: 6px;
+
+    .post-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
       text-decoration: none;
-      color: #1b5e20;
-      font-weight: bold;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
-    a.post-link:hover {
-      background: #a5d6a7;
+
+    .post-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-color: var(--primary);
+    }
+
+    .post-num {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 0.85rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      min-width: 32px;
+      text-align: center;
+    }
+
+    .post-title {
+      font-size: 0.95rem;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h1>🌿 Global Coworking with Matcha</h1>
-    <p style="text-align:center;">Explore blog posts about matcha drinks, cakes, and superfood across coworking spaces worldwide.</p>
+    <header>
+      <h1>🌿 Global Coworking with Matcha Maya</h1>
+      <p class="subtitle">Complete Index of 220 Global City Customer Journeys</p>
+    </header>
 
-    <div class="stats">
-      <div class="stat-box"><h2>220</h2><p>Total Posts</p></div>
-      <div class="stat-box"><h2>30+</h2><p>Global Cities</p></div>
-      <div class="stat-box"><h2>9</h2><p>Post Categories</p></div>
-    </div>
-
-    <div class="post-index">
-      <h3>📘 Complete Post Index</h3>
-      <div class="post-grid">
-        <!-- Full expanded 220 valid links -->
-<a class="post-link" href="001-matcha-maya-jakarta-coworking-customer-journey.html">001 - Jakarta Coworking Customer Journey</a>
-<a class="post-link" href="002-matcha-maya-dhaka-coworking-customer-journey.html">002 - Dhaka Coworking Customer Journey</a>
-<a class="post-link" href="003-matcha-maya-tokyo-coworking-customer-journey.html">003 - Tokyo Coworking Customer Journey</a>
-<a class="post-link" href="004-matcha-maya-new-delhi-coworking-customer-journey.html">004 - New Delhi Coworking Customer Journey</a>
-<a class="post-link" href="005-matcha-maya-shanghai-coworking-customer-journey.html">005 - Shanghai Coworking Customer Journey</a>
-<a class="post-link" href="006-matcha-maya-guangzhou-coworking-customer-journey.html">006 - Guangzhou Coworking Customer Journey</a>
-<a class="post-link" href="007-matcha-maya-cairo-coworking-customer-journey.html">007 - Cairo Coworking Customer Journey</a>
-<a class="post-link" href="008-matcha-maya-manila-coworking-customer-journey.html">008 - Manila Coworking Customer Journey</a>
-<a class="post-link" href="009-matcha-maya-kolkata-coworking-customer-journey.html">009 - Kolkata Coworking Customer Journey</a>
-<a class="post-link" href="010-matcha-maya-seoul-coworking-customer-journey.html">010 - Seoul Coworking Customer Journey</a>
-<a class="post-link" href="011-matcha-maya-karachi-coworking-customer-journey.html">011 - Karachi Coworking Customer Journey</a>
-<a class="post-link" href="012-matcha-maya-mumbai-coworking-customer-journey.html">012 - Mumbai Coworking Customer Journey</a>
-<a class="post-link" href="013-matcha-maya-sao-paulo-coworking-customer-journey.html">013 - São Paulo Coworking Customer Journey</a>
-<a class="post-link" href="014-matcha-maya-bangkok-coworking-customer-journey.html">014 - Bangkok Coworking Customer Journey</a>
-<a class="post-link" href="015-matcha-maya-mexico-city-coworking-customer-journey.html">015 - Mexico City Coworking Customer Journey</a>
-<a class="post-link" href="016-matcha-maya-beijing-coworking-customer-journey.html">016 - Beijing Coworking Customer Journey</a>
-<a class="post-link" href="017-matcha-maya-lahore-coworking-customer-journey.html">017 - Lahore Coworking Customer Journey</a>
-<a class="post-link" href="018-matcha-maya-istanbul-coworking-customer-journey.html">018 - Istanbul Coworking Customer Journey</a>
-<a class="post-link" href="019-matcha-maya-moscow-coworking-customer-journey.html">019 - Moscow Coworking Customer Journey</a>
-<a class="post-link" href="020-matcha-maya-ho-chi-minh-city-coworking-customer-journey.html">020 - Ho Chi Minh City Coworking Customer Journey</a>
-<a class="post-link" href="021-matcha-maya-kyoto-coworking-customer-journey.html">021 - Kyoto Coworking Customer Journey</a>
-<a class="post-link" href="022-matcha-maya-nagoya-coworking-customer-journey.html">022 - Nagoya Coworking Customer Journey</a>
-<a class="post-link" href="023-matcha-maya-hong-kong-coworking-customer-journey.html">023 - Hong Kong Coworking Customer Journey</a>
-<a class="post-link" href="024-matcha-maya-hanoi-coworking-customer-journey.html">024 - Hanoi Coworking Customer Journey</a>
-<a class="post-link" href="025-matcha-maya-taipei-coworking-customer-journey.html">025 - Taipei Coworking Customer Journey</a>
-<a class="post-link" href="026-matcha-maya-singapore-coworking-customer-journey.html">026 - Singapore Coworking Customer Journey</a>
-<a class="post-link" href="027-matcha-maya-kuala-lumpur-coworking-customer-journey.html">027 - Kuala Lumpur Coworking Customer Journey</a>
-<a class="post-link" href="028-matcha-maya-hyderabad-coworking-customer-journey.html">028 - Hyderabad Coworking Customer Journey</a>
-<a class="post-link" href="029-matcha-maya-chennai-coworking-customer-journey.html">029 - Chennai Coworking Customer Journey</a>
-<a class="post-link" href="030-matcha-maya-bangalore-coworking-customer-journey.html">030 - Bangalore Coworking Customer Journey</a>
-<a class="post-link" href="031-matcha-maya-osaka-coworking-customer-journey.html">031 - Osaka Coworking Customer Journey</a>
-<a class="post-link" href="032-matcha-maya-kyoto-coworking-customer-journey.html">032 - Kyoto Coworking Customer Journey</a>
-<a class="post-link" href="033-matcha-maya-nanjing-coworking-customer-journey.html">033 - Nanjing Coworking Customer Journey</a>
-<a class="post-link" href="034-matcha-maya-suzhou-coworking-customer-journey.html">034 - Suzhou Coworking Customer Journey</a>
-<a class="post-link" href="035-matcha-maya-tianjin-coworking-customer-journey.html">035 - Tianjin Coworking Customer Journey</a>
-<a class="post-link" href="036-matcha-maya-xian-coworking-customer-journey.html">036 - Xi'an Coworking Customer Journey</a>
-<a class="post-link" href="037-matcha-maya-chongqing-coworking-customer-journey.html">037 - Chongqing Coworking Customer Journey</a>
-<a class="post-link" href="038-matcha-maya-hangzhou-coworking-customer-journey.html">038 - Hangzhou Coworking Customer Journey</a>
-<a class="post-link" href="039-matcha-maya-shenzhen-coworking-customer-journey.html">039 - Shenzhen Coworking Customer Journey</a>
-<a class="post-link" href="040-matcha-maya-beijing-coworking-customer-journey.html">040 - Beijing Coworking Customer Journey</a>
-<a class="post-link" href="041-matcha-maya-shanghai-coworking-customer-journey.html">041 - Shanghai Coworking Customer Journey</a>
-<a class="post-link" href="042-matcha-maya-guangzhou-coworking-customer-journey.html">042 - Guangzhou Coworking Customer Journey</a>
-<a class="post-link" href="043-matcha-maya-cairo-coworking-customer-journey.html">043 - Cairo Coworking Customer Journey</a>
-<a class="post-link" href="044-matcha-maya-manila-coworking-customer-journey.html">044 - Manila Coworking Customer Journey</a>
-<a class="post-link" href="045-matcha-maya-kolkata-coworking-customer-journey.html">045 - Kolkata Coworking Customer Journey</a>
-<a class="post-link" href="046-matcha-maya-seoul-coworking-customer-journey.html">046 - Seoul Coworking Customer Journey</a>
-<a class="post-link" href="047-matcha-maya-karachi-coworking-customer-journey.html">047 - Karachi Coworking Customer Journey</a>
-<a class="post-link" href="048-matcha-maya-mumbai-coworking-customer-journey.html">048 - Mumbai Coworking Customer Journey</a>
-<a class="post-link" href="049-matcha-maya-sao-paulo-coworking-customer-journey.html">049 - São Paulo Coworking Customer Journey</a>
-<a class="post-link" href="050-matcha-maya-bangkok-coworking-customer-journey.html">050 - Bangkok Coworking Customer Journey</a>
-	<a class="post-link" href="051-matcha-maya-athens-coworking-customer-journey.html">051 - Athens Coworking Customer Journey</a>
-        <a class="post-link" href="052-matcha-maya-rome-coworking-customer-journey.html">052 - Rome Coworking Customer Journey</a>
-        <a class="post-link" href="053-matcha-maya-milan-coworking-customer-journey.html">053 - Milan Coworking Customer Journey</a>
-        <a class="post-link" href="054-matcha-maya-naples-coworking-customer-journey.html">054 - Naples Coworking Customer Journey</a>
-        <a class="post-link" href="055-matcha-maya-paris-coworking-customer-journey.html">055 - Paris Coworking Customer Journey</a>
-        <a class="post-link" href="056-matcha-maya-lyon-coworking-customer-journey.html">056 - Lyon Coworking Customer Journey</a>
-        <a class="post-link" href="057-matcha-maya-marseille-coworking-customer-journey.html">057 - Marseille Coworking Customer Journey</a>
-        <a class="post-link" href="058-matcha-maya-bordeaux-coworking-customer-journey.html">058 - Bordeaux Coworking Customer Journey</a>
-        <a class="post-link" href="059-matcha-maya-nice-coworking-customer-journey.html">059 - Nice Coworking Customer Journey</a>
-        <a class="post-link" href="060-matcha-maya-berlin-coworking-customer-journey.html">060 - Berlin Coworking Customer Journey</a>
-        <a class="post-link" href="061-matcha-maya-hamburg-coworking-customer-journey.html">061 - Hamburg Coworking Customer Journey</a>
-        <a class="post-link" href="062-matcha-maya-munich-coworking-customer-journey.html">062 - Munich Coworking Customer Journey</a>
-        <a class="post-link" href="063-matcha-maya-frankfurt-coworking-customer-journey.html">063 - Frankfurt Coworking Customer Journey</a>
-        <a class="post-link" href="064-matcha-maya-cologne-coworking-customer-journey.html">064 - Cologne Coworking Customer Journey</a>
-        <a class="post-link" href="065-matcha-maya-vienna-coworking-customer-journey.html">065 - Vienna Coworking Customer Journey</a>
-        <a class="post-link" href="066-matcha-maya-zurich-coworking-customer-journey.html">066 - Zurich Coworking Customer Journey</a>
-        <a class="post-link" href="067-matcha-maya-geneva-coworking-customer-journey.html">067 - Geneva Coworking Customer Journey</a>
-        <a class="post-link" href="068-matcha-maya-brussels-coworking-customer-journey.html">068 - Brussels Coworking Customer Journey</a>
-        <a class="post-link" href="069-matcha-maya-amsterdam-coworking-customer-journey.html">069 - Amsterdam Coworking Customer Journey</a>
-        <a class="post-link" href="070-matcha-maya-rotterdam-coworking-customer-journey.html">070 - Rotterdam Coworking Customer Journey</a>
-        <a class="post-link" href="071-matcha-maya-stockholm-coworking-customer-journey.html">071 - Stockholm Coworking Customer Journey</a>
-        <a class="post-link" href="072-matcha-maya-gothenburg-coworking-customer-journey.html">072 - Gothenburg Coworking Customer Journey</a>
-        <a class="post-link" href="073-matcha-maya-oslo-coworking-customer-journey.html">073 - Oslo Coworking Customer Journey</a>
-        <a class="post-link" href="074-matcha-maya-bergen-coworking-customer-journey.html">074 - Bergen Coworking Customer Journey</a>
-        <a class="post-link" href="075-matcha-maya-copenhagen-coworking-customer-journey.html">075 - Copenhagen Coworking Customer Journey</a>
-        <a class="post-link" href="076-matcha-maya-helsinki-coworking-customer-journey.html">076 - Helsinki Coworking Customer Journey</a>
-        <a class="post-link" href="077-matcha-maya-tallinn-coworking-customer-journey.html">077 - Tallinn Coworking Customer Journey</a>
-        <a class="post-link" href="078-matcha-maya-riga-coworking-customer-journey.html">078 - Riga Coworking Customer Journey</a>
-        <a class="post-link" href="079-matcha-maya-vilnius-coworking-customer-journey.html">079 - Vilnius Coworking Customer Journey</a>
-        <a class="post-link" href="080-matcha-maya-warsaw-coworking-customer-journey.html">080 - Warsaw Coworking Customer Journey</a>
-        <a class="post-link" href="081-matcha-maya-krakow-coworking-customer-journey.html">081 - Krakow Coworking Customer Journey</a>
-        <a class="post-link" href="082-matcha-maya-prague-coworking-customer-journey.html">082 - Prague Coworking Customer Journey</a>
-        <a class="post-link" href="083-matcha-maya-brno-coworking-customer-journey.html">083 - Brno Coworking Customer Journey</a>
-        <a class="post-link" href="084-matcha-maya-bratislava-coworking-customer-journey.html">084 - Bratislava Coworking Customer Journey</a>
-        <a class="post-link" href="085-matcha-maya-budapest-coworking-customer-journey.html">085 - Budapest Coworking Customer Journey</a>
-        <a class="post-link" href="086-matcha-maya-debrecen-coworking-customer-journey.html">086 - Debrecen Coworking Customer Journey</a>
-        <a class="post-link" href="087-matcha-maya-belgrade-coworking-customer-journey.html">087 - Belgrade Coworking Customer Journey</a>
-        <a class="post-link" href="088-matcha-maya-sarajevo-coworking-customer-journey.html">088 - Sarajevo Coworking Customer Journey</a>
-        <a class="post-link" href="089-matcha-maya-zagreb-coworking-customer-journey.html">089 - Zagreb Coworking Customer Journey</a>
-        <a class="post-link" href="090-matcha-maya-ljubljana-coworking-customer-journey.html">090 - Ljubljana Coworking Customer Journey</a>
-        <a class="post-link" href="091-matcha-maya-sofia-coworking-customer-journey.html">091 - Sofia Coworking Customer Journey</a>
-        <a class="post-link" href="092-matcha-maya-bucharest-coworking-customer-journey.html">092 - Bucharest Coworking Customer Journey</a>
-        <a class="post-link" href="093-matcha-maya-constanta-coworking-customer-journey.html">093 - Constanta Coworking Customer Journey</a>
-        <a class="post-link" href="094-matcha-maya-chisinau-coworking-customer-journey.html">094 - Chisinau Coworking Customer Journey</a>
-        <a class="post-link" href="095-matcha-maya-kiev-coworking-customer-journey.html">095 - Kiev Coworking Customer Journey</a>
-        <a class="post-link" href="096-matcha-maya-odessa-coworking-customer-journey.html">096 - Odessa Coworking Customer Journey</a>
-        <a class="post-link" href="097-matcha-maya-minsk-coworking-customer-journey.html">097 - Minsk Coworking Customer Journey</a>
-        <a class="post-link" href="098-matcha-maya-moscow-coworking-customer-journey.html">098 - Moscow Coworking Customer Journey</a>
-        <a class="post-link" href="099-matcha-maya-st-petersburg-coworking-customer-journey.html">099 - St Petersburg Coworking Customer Journey</a>
-        <a class="post-link" href="100-matcha-maya-novosibirsk-coworking-customer-journey.html">100 - Nov
-	<a class="post-link" href="101-matcha-maya-yekaterinburg-coworking-customer-journey.html">101 - Yekaterinburg Coworking Customer Journey</a>
-        <a class="post-link" href="102-matcha-maya-kazan-coworking-customer-journey.html">102 - Kazan Coworking Customer Journey</a>
-        <a class="post-link" href="103-matcha-maya-nizhny-novgorod-coworking-customer-journey.html">103 - Nizhny Novgorod Coworking Customer Journey</a>
-        <a class="post-link" href="104-matcha-maya-samara-coworking-customer-journey.html">104 - Samara Coworking Customer Journey</a>
-        <a class="post-link" href="105-matcha-maya-rostov-coworking-customer-journey.html">105 - Rostov Coworking Customer Journey</a>
-        <a class="post-link" href="106-matcha-maya-volgograd-coworking-customer-journey.html">106 - Volgograd Coworking Customer Journey</a>
-        <a class="post-link" href="107-matcha-maya-sochi-coworking-customer-journey.html">107 - Sochi Coworking Customer Journey</a>
-        <a class="post-link" href="108-matcha-maya-krasnodar-coworking-customer-journey.html">108 - Krasnodar Coworking Customer Journey</a>
-        <a class="post-link" href="109-matcha-maya-vladivostok-coworking-customer-journey.html">109 - Vladivostok Coworking Customer Journey</a>
-        <a class="post-link" href="110-matcha-maya-irkutsk-coworking-customer-journey.html">110 - Irkutsk Coworking Customer Journey</a>
-        <a class="post-link" href="111-matcha-maya-ulan-bator-coworking-customer-journey.html">111 - Ulan Bator Coworking Customer Journey</a>
-        <a class="post-link" href="112-matcha-maya-almaty-coworking-customer-journey.html">112 - Almaty Coworking Customer Journey</a>
-        <a class="post-link" href="113-matcha-maya-astana-coworking-customer-journey.html">113 - Astana Coworking Customer Journey</a>
-        <a class="post-link" href="114-matcha-maya-tashkent-coworking-customer-journey.html">114 - Tashkent Coworking Customer Journey</a>
-        <a class="post-link" href="115-matcha-maya-bishkek-coworking-customer-journey.html">115 - Bishkek Coworking Customer Journey</a>
-        <a class="post-link" href="116-matcha-maya-dushanbe-coworking-customer-journey.html">116 - Dushanbe Coworking Customer Journey</a>
-        <a class="post-link" href="117-matcha-maya-ashgabat-coworking-customer-journey.html">117 - Ashgabat Coworking Customer Journey</a>
-        <a class="post-link" href="118-matcha-maya-yerevan-coworking-customer-journey.html">118 - Yerevan Coworking Customer Journey</a>
-        <a class="post-link" href="119-matcha-maya-tbilisi-coworking-customer-journey.html">119 - Tbilisi Coworking Customer Journey</a>
-        <a class="post-link" href="120-matcha-maya-baku-coworking-customer-journey.html">120 - Baku Coworking Customer Journey</a>
-        <a class="post-link" href="121-matcha-maya-kabul-coworking-customer-journey.html">121 - Kabul Coworking Customer Journey</a>
-        <a class="post-link" href="122-matcha-maya-isfahan-coworking-customer-journey.html">122 - Isfahan Coworking Customer Journey</a>
-        <a class="post-link" href="123-matcha-maya-shiraz-coworking-customer-journey.html">123 - Shiraz Coworking Customer Journey</a>
-        <a class="post-link" href="124-matcha-maya-mashhad-coworking-customer-journey.html">124 - Mashhad Coworking Customer Journey</a>
-        <a class="post-link" href="125-matcha-maya-karaj-coworking-customer-journey.html">125 - Karaj Coworking Customer Journey</a>
-        <a class="post-link" href="126-matcha-maya-quetta-coworking-customer-journey.html">126 - Quetta Coworking Customer Journey</a>
-        <a class="post-link" href="127-matcha-maya-peshawar-coworking-customer-journey.html">127 - Peshawar Coworking Customer Journey</a>
-        <a class="post-link" href="128-matcha-maya-kandahar-coworking-customer-journey.html">128 - Kandahar Coworking Customer Journey</a>
-        <a class="post-link" href="129-matcha-maya-herat-coworking-customer-journey.html">129 - Herat Coworking Customer Journey</a>
-        <a class="post-link" href="130-matcha-maya-sanaa-coworking-customer-journey.html">130 - Sanaa Coworking Customer Journey</a>
-        <a class="post-link" href="131-matcha-maya-aden-coworking-customer-journey.html">131 - Aden Coworking Customer Journey</a>
-        <a class="post-link" href="132-matcha-maya-mogadishu-coworking-customer-journey.html">132 - Mogadishu Coworking Customer Journey</a>
-        <a class="post-link" href="133-matcha-maya-nairobi-coworking-customer-journey.html">133 - Nairobi Coworking Customer Journey</a>
-        <a class="post-link" href="134-matcha-maya-mombasa-coworking-customer-journey.html">134 - Mombasa Coworking Customer Journey</a>
-        <a class="post-link" href="135-matcha-maya-addis-ababa-coworking-customer-journey.html">135 - Addis Ababa Coworking Customer Journey</a>
-        <a class="post-link" href="136-matcha-maya-kampala-coworking-customer-journey.html">136 - Kampala Coworking Customer Journey</a>
-        <a class="post-link" href="137-matcha-maya-kigali-coworking-customer-journey.html">137 - Kigali Coworking Customer Journey</a>
-        <a class="post-link" href="138-matcha-maya-dar-es-salaam-coworking-customer-journey.html">138 - Dar es Salaam Coworking Customer Journey</a>
-        <a class="post-link" href="139-matcha-maya-lusaka-coworking-customer-journey.html">139 - Lusaka Coworking Customer Journey</a>
-        <a class="post-link" href="140-matcha-maya-harare-coworking-customer-journey.html">140 - Harare Coworking Customer Journey</a>
-        <a class="post-link" href="141-matcha-maya-johannesburg-coworking-customer-journey.html">141 - Johannesburg Coworking Customer Journey</a>
-        <a class="post-link" href="142-matcha-maya-cape-town-coworking-customer-journey.html">142 - Cape Town Coworking Customer Journey</a>
-        <a class="post-link" href="143-matcha-maya-durban-coworking-customer-journey.html">143 - Durban Coworking Customer Journey</a>
-        <a class="post-link" href="144-matcha-maya-pretoria-coworking-customer-journey.html">144 - Pretoria Coworking Customer Journey</a>
-        <a class="post-link" href="145-matcha-maya-bloemfontein-coworking-customer-journey.html">145 - Bloemfontein Coworking Customer Journey</a>
-        <a class="post-link" href="146-matcha-maya-windhoek-coworking-customer-journey.html">146 - Windhoek Coworking Customer Journey</a>
-        <a class="post-link" href="147-matcha-maya-gaborone-coworking-customer-journey.html">147 - Gaborone Coworking Customer Journey</a>
-	<a class="post-link" href="148-matcha-maya-maputo-coworking-customer-journey.html">148 - Maputo Coworking Customer Journey</a>
-	<a class="post-link" href="149-matcha-maya-antananarivo-coworking-customer-journey.html">149 - Antananarivo-coworking-customer-journey</a>
-        <a class="post-link" href="151-matcha-maya-victoria-coworking-customer-journey.html">151 - Victoria Coworking Customer Journey</a>
-        <a class="post-link" href="152-matcha-maya-nouakchott-coworking-customer-journey.html">152 - Nouakchott Coworking Customer Journey</a>
-        <a class="post-link" href="153-matcha-maya-dakar-coworking-customer-journey.html">153 - Dakar Coworking Customer Journey</a>
-        <a class="post-link" href="154-matcha-maya-banjul-coworking-customer-journey.html">154 - Banjul Coworking Customer Journey</a>
-        <a class="post-link" href="155-matcha-maya-conakry-coworking-customer-journey.html">155 - Conakry Coworking Customer Journey</a>
-        <a class="post-link" href="156-matcha-maya-freetown-coworking-customer-journey.html">156 - Freetown Coworking Customer Journey</a>
-        <a class="post-link" href="157-matcha-maya-monrovia-coworking-customer-journey.html">157 - Monrovia Coworking Customer Journey</a>
-        <a class="post-link" href="158-matcha-maya-accra-coworking-customer-journey.html">158 - Accra Coworking Customer Journey</a>
-        <a class="post-link" href="159-matcha-maya-lome-coworking-customer-journey.html">159 - Lome Coworking Customer Journey</a>
-        <a class="post-link" href="160-matcha-maya-cotonou-coworking-customer-journey.html">160 - Cotonou Coworking Customer Journey</a>
-        <a class="post-link" href="161-matcha-maya-porto-novo-coworking-customer-journey.html">161 - Porto Novo Coworking Customer Journey</a>
-        <a class="post-link" href="162-matcha-maya-ouagadougou-coworking-customer-journey.html">162 - Ouagadougou Coworking Customer Journey</a>
-        <a class="post-link" href="163-matcha-maya-bamako-coworking-customer-journey.html">163 - Bamako Coworking Customer Journey</a>
-        <a class="post-link" href="164-matcha-maya-niamey-coworking-customer-journey.html">164 - Niamey Coworking Customer Journey</a>
-        <a class="post-link" href="165-matcha-maya-n-djamena-coworking-customer-journey.html">165 - N'Djamena Coworking Customer Journey</a>
-        <a class="post-link" href="166-matcha-maya-bangui-coworking-customer-journey.html">166 - Bangui Coworking Customer Journey</a>
-        <a class="post-link" href="167-matcha-maya-yaounde-coworking-customer-journey.html">167 - Yaounde Coworking Customer Journey</a>
-        <a class="post-link" href="168-matcha-maya-douala-coworking-customer-journey.html">168 - Douala Coworking Customer Journey</a>
-        <a class="post-link" href="169-matcha-maya-malabo-coworking-customer-journey.html">169 - Malabo Coworking Customer Journey</a>
-        <a class="post-link" href="170-matcha-maya-libreville-coworking-customer-journey.html">170 - Libreville Coworking Customer Journey</a>
-        <a class="post-link" href="171-matcha-maya-brazzaville-coworking-customer-journey.html">171 - Brazzaville Coworking Customer Journey</a>
-        <a class="post-link" href="172-matcha-maya-kinshasa-coworking-customer-journey.html">172 - Kinshasa Coworking Customer Journey</a>
-        <a class="post-link" href="173-matcha-maya-lubumbashi-coworking-customer-journey.html">173 - Lubumbashi Coworking Customer Journey</a>
-        <a class="post-link" href="174-matcha-maya-kisangani-coworking-customer-journey.html">174 - Kisangani Coworking Customer Journey</a>
-        <a class="post-link" href="175-matcha-maya-bujumbura-coworking-customer-journey.html">175 - Bujumbura Coworking Customer Journey</a>
-        <a class="post-link" href="176-matcha-maya-dodoma-coworking-customer-journey.html">176 - Dodoma Coworking Customer Journey</a>
-        <a class="post-link" href="177-matcha-maya-nairobi-coworking-customer-journey.html">177 - Nairobi Coworking Customer Journey</a>
-        <a class="post-link" href="178-matcha-maya-kampala-coworking-customer-journey.html">178 - Kampala Coworking Customer Journey</a>
-        <a class="post-link" href="179-matcha-maya-kigali-coworking-customer-journey.html">179 - Kigali Coworking Customer Journey</a>
-        <a class="post-link" href="180-matcha-maya-lusaka-coworking-customer-journey.html">180 - Lusaka Coworking Customer Journey</a>
-        <a class="post-link" href="181-matcha-maya-harare-coworking-customer-journey.html">181 - Harare Coworking Customer Journey</a>
-        <a class="post-link" href="182-matcha-maya-johannesburg-coworking-customer-journey.html">182 - Johannesburg Coworking Customer Journey</a>
-        <a class="post-link" href="183-matcha-maya-cape-town-coworking-customer-journey.html">183 - Cape Town Coworking Customer Journey</a>
-        <a class="post-link" href="184-matcha-maya-durban-coworking-customer-journey.html">184 - Durban Coworking Customer Journey</a>
-        <a class="post-link" href="185-matcha-maya-pretoria-coworking-customer-journey.html">185 - Pretoria Coworking Customer Journey</a>
-        <a class="post-link" href="186-matcha-maya-bloemfontein-coworking-customer-journey.html">186 - Bloemfontein Coworking Customer Journey</a>
-        <a class="post-link" href="187-matcha-maya-windhoek-coworking-customer-journey.html">187 - Windhoek Coworking Customer Journey</a>
-        <a class="post-link" href="188-matcha-maya-gaborone-coworking-customer-journey.html">188 - Gaborone Coworking Customer Journey</a>
-        <a class="post-link" href="189-matcha-maya-maputo-coworking-customer-journey.html">189 - Maputo Coworking Customer Journey</a>
-        <a class="post-link" href="190-matcha-maya-antananarivo-coworking-customer-journey.html">190 - Antananarivo Coworking Customer Journey</a>
-        <a class="post-link" href="191-matcha-maya-porto-coworking-customer-journey.html">191 - Porto Coworking Customer Journey</a>
-        <a class="post-link" href="192-matcha-maya-lisbon-coworking-customer-journey.html">192 - Lisbon Coworking Customer Journey</a>
-        <a class="post-link" href="193-matcha-maya-madrid-coworking-customer-journey.html">193 - Madrid Coworking Customer Journey</a>
-        <a class="post-link" href="194-matcha-maya-barcelona-coworking-customer-journey.html">194 - Barcelona Coworking Customer Journey</a>
-<a class="post-link" href="195-matcha-maya-valencia-coworking-customer-journey.html">195 - Valencia Coworking Customer Journey</a>
-<a class="post-link" href="196-matcha-maya-seville-coworking-customer-journey.html">196 - Seville Coworking Customer Journey</a>
-<a class="post-link" href="197-matcha-maya-bilbao-coworking-customer-journey.html">197 - Bilbao Coworking Customer Journey</a>
-<a class="post-link" href="198-matcha-maya-san-sebastian-coworking-customer-journey.html">198 - San Sebastian Coworking Customer Journey</a>
-<a class="post-link" href="199-matcha-maya-granada-coworking-customer-journey.html">199 - Granada Coworking Customer Journey</a>
-<a class="post-link" href="200-matcha-maya-malaga-coworking-customer-journey.html">200 - Malaga Coworking Customer Journey</a>
-<a class="post-link" href="201-matcha-maya-cordoba-coworking-customer-journey.html">201 - Cordoba Coworking Customer Journey</a>
-<a class="post-link" href="202-matcha-maya-alicante-coworking-customer-journey.html">202 - Alicante Coworking Customer Journey</a>
-<a class="post-link" href="203-matcha-maya-murcia-coworking-customer-journey.html">203 - Murcia Coworking Customer Journey</a>
-<a class="post-link" href="204-matcha-maya-valladolid-coworking-customer-journey.html">204 - Valladolid Coworking Customer Journey</a>
-<a class="post-link" href="205-matcha-maya-salamanca-coworking-customer-journey.html">205 - Salamanca Coworking Customer Journey</a>
-<a class="post-link" href="206-matcha-maya-burgos-coworking-customer-journey.html">206 - Burgos Coworking Customer Journey</a>
-<a class="post-link" href="207-matcha-maya-santander-coworking-customer-journey.html">207 - Santander Coworking Customer Journey</a>
-<a class="post-link" href="208-matcha-maya-vigo-coworking-customer-journey.html">208 - Vigo Coworking Customer Journey</a>
-<a class="post-link" href="209-matcha-maya-a-coruna-coworking-customer-journey.html">209 - A Coruña Coworking Customer Journey</a>
-<a class="post-link" href="210-matcha-maya-oviedo-coworking-customer-journey.html">210 - Oviedo Coworking Customer Journey</a>
-<a class="post-link" href="211-matcha-maya-pamplona-coworking-customer-journey.html">211 - Pamplona Coworking Customer Journey</a>
-<a class="post-link" href="212-matcha-maya-logrono-coworking-customer-journey.html">212 - Logroño Coworking Customer Journey</a>
-<a class="post-link" href="213-matcha-maya-zaragoza-coworking-customer-journey.html">213 - Zaragoza Coworking Customer Journey</a>
-<a class="post-link" href="214-matcha-maya-toledo-coworking-customer-journey.html">214 - Toledo Coworking Customer Journey</a>
-<a class="post-link" href="215-matcha-maya-cuenca-coworking-customer-journey.html">215 - Cuenca Coworking Customer Journey</a>
-<a class="post-link" href="216-matcha-maya-segovia-coworking-customer-journey.html">216 - Segovia Coworking Customer Journey</a>
-<a class="post-link" href="217-matcha-maya-guadalajara-coworking-customer-journey.html">217 - Guadalajara Coworking Customer Journey</a>
-<a class="post-link" href="218-matcha-maya-maiduguri-coworking-customer-journey.html">218 - Maiduguri Coworking Customer Journey</a>
-<a class="post-link" href="219-matcha-maya-kaduna-coworking-customer-journey.html">219 - Kaduna Coworking Customer Journey</a>
-<a class="post-link" href="220-matcha-maya-ho-chi-minh-city-coworking-customer-journey.html">220 - Ho Chi Minh City Coworking Customer Journey</a>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">220</div>
+        <div>Total Guides</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Global</div>
+        <div>Coverage</div>
       </div>
     </div>
+
+    <input type="text" id="searchInput" class="search-box" placeholder="Search city or post number (e.g. Bangkok, 014)..." onkeyup="filterPosts()">
+
+    <div class="post-grid" id="postGrid">
+      <!-- 220 Relative Links -->
+      <a href="001-matcha-maya-jakarta-coworking-customer-journey.html" class="post-card"><span class="post-num">001</span><span class="post-title">Jakarta</span></a>
+      <a href="002-matcha-maya-dhaka-coworking-customer-journey.html" class="post-card"><span class="post-num">002</span><span class="post-title">Dhaka</span></a>
+      <a href="003-matcha-maya-tokyo-coworking-customer-journey.html" class="post-card"><span class="post-num">003</span><span class="post-title">Tokyo</span></a>
+      <a href="004-matcha-maya-new-delhi-coworking-customer-journey.html" class="post-card"><span class="post-num">004</span><span class="post-title">New Delhi</span></a>
+      <a href="005-matcha-maya-shanghai-coworking-customer-journey.html" class="post-card"><span class="post-num">005</span><span class="post-title">Shanghai</span></a>
+      <a href="006-matcha-maya-guangzhou-coworking-customer-journey.html" class="post-card"><span class="post-num">006</span><span class="post-title">Guangzhou</span></a>
+      <a href="007-matcha-maya-cairo-coworking-customer-journey.html" class="post-card"><span class="post-num">007</span><span class="post-title">Cairo</span></a>
+      <a href="008-matcha-maya-manila-coworking-customer-journey.html" class="post-card"><span class="post-num">008</span><span class="post-title">Manila</span></a>
+      <a href="009-matcha-maya-kolkata-coworking-customer-journey.html" class="post-card"><span class="post-num">009</span><span class="post-title">Kolkata</span></a>
+      <a href="010-matcha-maya-seoul-coworking-customer-journey.html" class="post-card"><span class="post-num">010</span><span class="post-title">Seoul</span></a>
+      <a href="011-matcha-maya-karachi-coworking-customer-journey.html" class="post-card"><span class="post-num">011</span><span class="post-title">Karachi</span></a>
+      <a href="012-matcha-maya-mumbai-coworking-customer-journey.html" class="post-card"><span class="post-num">012</span><span class="post-title">Mumbai</span></a>
+      <a href="013-matcha-maya-sao-paulo-coworking-customer-journey.html" class="post-card"><span class="post-num">013</span><span class="post-title">São Paulo</span></a>
+      <a href="014-matcha-maya-bangkok-coworking-customer-journey.html" class="post-card"><span class="post-num">014</span><span class="post-title">Bangkok</span></a>
+      <a href="015-matcha-maya-mexico-city-coworking-customer-journey.html" class="post-card"><span class="post-num">015</span><span class="post-title">Mexico City</span></a>
+      <a href="016-matcha-maya-beijing-coworking-customer-journey.html" class="post-card"><span class="post-num">016</span><span class="post-title">Beijing</span></a>
+      <a href="017-matcha-maya-lahore-coworking-customer-journey.html" class="post-card"><span class="post-num">017</span><span class="post-title">Lahore</span></a>
+      <a href="018-matcha-maya-istanbul-coworking-customer-journey.html" class="post-card"><span class="post-num">018</span><span class="post-title">Istanbul</span></a>
+      <a href="019-matcha-maya-moscow-coworking-customer-journey.html" class="post-card"><span class="post-num">019</span><span class="post-title">Moscow</span></a>
+      <a href="020-matcha-maya-ho-chi-minh-city-coworking-customer-journey.html" class="post-card"><span class="post-num">020</span><span class="post-title">Ho Chi Minh City</span></a>
+      <a href="021-matcha-maya-kyoto-coworking-customer-journey.html" class="post-card"><span class="post-num">021</span><span class="post-title">Kyoto</span></a>
+      <a href="022-matcha-maya-nagoya-coworking-customer-journey.html" class="post-card"><span class="post-num">022</span><span class="post-title">Nagoya</span></a>
+      <a href="023-matcha-maya-hong-kong-coworking-customer-journey.html" class="post-card"><span class="post-num">023</span><span class="post-title">Hong Kong</span></a>
+      <a href="024-matcha-maya-hanoi-coworking-customer-journey.html" class="post-card"><span class="post-num">024</span><span class="post-title">Hanoi</span></a>
+      <a href="025-matcha-maya-taipei-coworking-customer-journey.html" class="post-card"><span class="post-num">025</span><span class="post-title">Taipei</span></a>
+      <a href="026-matcha-maya-singapore-coworking-customer-journey.html" class="post-card"><span class="post-num">026</span><span class="post-title">Singapore</span></a>
+      <a href="027-matcha-maya-kuala-lumpur-coworking-customer-journey.html" class="post-card"><span class="post-num">027</span><span class="post-title">Kuala Lumpur</span></a>
+      <a href="028-matcha-maya-hyderabad-coworking-customer-journey.html" class="post-card"><span class="post-num">028</span><span class="post-title">Hyderabad</span></a>
+      <a href="029-matcha-maya-chennai-coworking-customer-journey.html" class="post-card"><span class="post-num">029</span><span class="post-title">Chennai</span></a>
+      <a href="030-matcha-maya-bangalore-coworking-customer-journey.html" class="post-card"><span class="post-num">030</span><span class="post-title">Bangalore</span></a>
+      <a href="031-matcha-maya-osaka-coworking-customer-journey.html" class="post-card"><span class="post-num">031</span><span class="post-title">Osaka</span></a>
+      <a href="032-matcha-maya-fukuoka-coworking-customer-journey.html" class="post-card"><span class="post-num">032</span><span class="post-title">Fukuoka</span></a>
+      <a href="033-matcha-maya-nanjing-coworking-customer-journey.html" class="post-card"><span class="post-num">033</span><span class="post-title">Nanjing</span></a>
+      <a href="034-matcha-maya-suzhou-coworking-customer-journey.html" class="post-card"><span class="post-num">034</span><span class="post-title">Suzhou</span></a>
+      <a href="035-matcha-maya-tianjin-coworking-customer-journey.html" class="post-card"><span class="post-num">035</span><span class="post-title">Tianjin</span></a>
+      <a href="036-matcha-maya-xian-coworking-customer-journey.html" class="post-card"><span class="post-num">036</span><span class="post-title">Xi'an</span></a>
+      <a href="037-matcha-maya-chongqing-coworking-customer-journey.html" class="post-card"><span class="post-num">037</span><span class="post-title">Chongqing</span></a>
+      <a href="038-matcha-maya-hangzhou-coworking-customer-journey.html" class="post-card"><span class="post-num">038</span><span class="post-title">Hangzhou</span></a>
+      <a href="039-matcha-maya-shenzhen-coworking-customer-journey.html" class="post-card"><span class="post-num">039</span><span class="post-title">Shenzhen</span></a>
+      <a href="040-matcha-maya-chengdu-coworking-customer-journey.html" class="post-card"><span class="post-num">040</span><span class="post-title">Chengdu</span></a>
+      <a href="041-matcha-maya-wuhan-coworking-customer-journey.html" class="post-card"><span class="post-num">041</span><span class="post-title">Wuhan</span></a>
+      <a href="042-matcha-maya-dongguan-coworking-customer-journey.html" class="post-card"><span class="post-num">042</span><span class="post-title">Dongguan</span></a>
+      <a href="043-matcha-maya-foshan-coworking-customer-journey.html" class="post-card"><span class="post-num">043</span><span class="post-title">Foshan</span></a>
+      <a href="044-matcha-maya-ahmedabad-coworking-customer-journey.html" class="post-card"><span class="post-num">044</span><span class="post-title">Ahmedabad</span></a>
+      <a href="045-matcha-maya-pune-coworking-customer-journey.html" class="post-card"><span class="post-num">045</span><span class="post-title">Pune</span></a>
+      <a href="046-matcha-maya-surat-coworking-customer-journey.html" class="post-card"><span class="post-num">046</span><span class="post-title">Surat</span></a>
+      <a href="047-matcha-maya-jaipur-coworking-customer-journey.html" class="post-card"><span class="post-num">047</span><span class="post-title">Jaipur</span></a>
+      <a href="048-matcha-maya-lucknow-coworking-customer-journey.html" class="post-card"><span class="post-num">048</span><span class="post-title">Lucknow</span></a>
+      <a href="049-matcha-maya-kanpur-coworking-customer-journey.html" class="post-card"><span class="post-num">049</span><span class="post-title">Kanpur</span></a>
+      <a href="050-matcha-maya-nagpur-coworking-customer-journey.html" class="post-card"><span class="post-num">050</span><span class="post-title">Nagpur</span></a>
+      <a href="051-matcha-maya-athens-coworking-customer-journey.html" class="post-card"><span class="post-num">051</span><span class="post-title">Athens</span></a>
+      <a href="052-matcha-maya-rome-coworking-customer-journey.html" class="post-card"><span class="post-num">052</span><span class="post-title">Rome</span></a>
+      <a href="053-matcha-maya-milan-coworking-customer-journey.html" class="post-card"><span class="post-num">053</span><span class="post-title">Milan</span></a>
+      <a href="054-matcha-maya-naples-coworking-customer-journey.html" class="post-card"><span class="post-num">054</span><span class="post-title">Naples</span></a>
+      <a href="055-matcha-maya-paris-coworking-customer-journey.html" class="post-card"><span class="post-num">055</span><span class="post-title">Paris</span></a>
+      <a href="056-matcha-maya-lyon-coworking-customer-journey.html" class="post-card"><span class="post-num">056</span><span class="post-title">Lyon</span></a>
+      <a href="057-matcha-maya-marseille-coworking-customer-journey.html" class="post-card"><span class="post-num">057</span><span class="post-title">Marseille</span></a>
+      <a href="058-matcha-maya-bordeaux-coworking-customer-journey.html" class="post-card"><span class="post-num">058</span><span class="post-title">Bordeaux</span></a>
+      <a href="059-matcha-maya-nice-coworking-customer-journey.html" class="post-card"><span class="post-num">059</span><span class="post-title">Nice</span></a>
+      <a href="060-matcha-maya-berlin-coworking-customer-journey.html" class="post-card"><span class="post-num">060</span><span class="post-title">Berlin</span></a>
+      <a href="061-matcha-maya-hamburg-coworking-customer-journey.html" class="post-card"><span class="post-num">061</span><span class="post-title">Hamburg</span></a>
+      <a href="062-matcha-maya-munich-coworking-customer-journey.html" class="post-card"><span class="post-num">062</span><span class="post-title">Munich</span></a>
+      <a href="063-matcha-maya-frankfurt-coworking-customer-journey.html" class="post-card"><span class="post-num">063</span><span class="post-title">Frankfurt</span></a>
+      <a href="064-matcha-maya-cologne-coworking-customer-journey.html" class="post-card"><span class="post-num">064</span><span class="post-title">Cologne</span></a>
+      <a href="065-matcha-maya-vienna-coworking-customer-journey.html" class="post-card"><span class="post-num">065</span><span class="post-title">Vienna</span></a>
+      <a href="066-matcha-maya-zurich-coworking-customer-journey.html" class="post-card"><span class="post-num">066</span><span class="post-title">Zurich</span></a>
+      <a href="067-matcha-maya-geneva-coworking-customer-journey.html" class="post-card"><span class="post-num">067</span><span class="post-title">Geneva</span></a>
+      <a href="068-matcha-maya-brussels-coworking-customer-journey.html" class="post-card"><span class="post-num">068</span><span class="post-title">Brussels</span></a>
+      <a href="069-matcha-maya-amsterdam-coworking-customer-journey.html" class="post-card"><span class="post-num">069</span><span class="post-title">Amsterdam</span></a>
+      <a href="070-matcha-maya-rotterdam-coworking-customer-journey.html" class="post-card"><span class="post-num">070</span><span class="post-title">Rotterdam</span></a>
+      <a href="071-matcha-maya-stockholm-coworking-customer-journey.html" class="post-card"><span class="post-num">071</span><span class="post-title">Stockholm</span></a>
+      <a href="072-matcha-maya-gothenburg-coworking-customer-journey.html" class="post-card"><span class="post-num">072</span><span class="post-title">Gothenburg</span></a>
+      <a href="073-matcha-maya-oslo-coworking-customer-journey.html" class="post-card"><span class="post-num">073</span><span class="post-title">Oslo</span></a>
+      <a href="074-matcha-maya-bergen-coworking-customer-journey.html" class="post-card"><span class="post-num">074</span><span class="post-title">Bergen</span></a>
+      <a href="075-matcha-maya-copenhagen-coworking-customer-journey.html" class="post-card"><span class="post-num">075</span><span class="post-title">Copenhagen</span></a>
+      <a href="076-matcha-maya-helsinki-coworking-customer-journey.html" class="post-card"><span class="post-num">076</span><span class="post-title">Helsinki</span></a>
+      <a href="077-matcha-maya-tallinn-coworking-customer-journey.html" class="post-card"><span class="post-num">077</span><span class="post-title">Tallinn</span></a>
+      <a href="078-matcha-maya-riga-coworking-customer-journey.html" class="post-card"><span class="post-num">078</span><span class="post-title">Riga</span></a>
+      <a href="079-matcha-maya-vilnius-coworking-customer-journey.html" class="post-card"><span class="post-num">079</span><span class="post-title">Vilnius</span></a>
+      <a href="080-matcha-maya-warsaw-coworking-customer-journey.html" class="post-card"><span class="post-num">080</span><span class="post-title">Warsaw</span></a>
+      <a href="081-matcha-maya-krakow-coworking-customer-journey.html" class="post-card"><span class="post-num">081</span><span class="post-title">Krakow</span></a>
+      <a href="082-matcha-maya-prague-coworking-customer-journey.html" class="post-card"><span class="post-num">082</span><span class="post-title">Prague</span></a>
+      <a href="083-matcha-maya-brno-coworking-customer-journey.html" class="post-card"><span class="post-num">083</span><span class="post-title">Brno</span></a>
+      <a href="084-matcha-maya-bratislava-coworking-customer-journey.html" class="post-card"><span class="post-num">084</span><span class="post-title">Bratislava</span></a>
+      <a href="085-matcha-maya-budapest-coworking-customer-journey.html" class="post-card"><span class="post-num">085</span><span class="post-title">Budapest</span></a>
+      <a href="086-matcha-maya-debrecen-coworking-customer-journey.html" class="post-card"><span class="post-num">086</span><span class="post-title">Debrecen</span></a>
+      <a href="087-matcha-maya-belgrade-coworking-customer-journey.html" class="post-card"><span class="post-num">087</span><span class="post-title">Belgrade</span></a>
+      <a href="088-matcha-maya-sarajevo-coworking-customer-journey.html" class="post-card"><span class="post-num">088</span><span class="post-title">Sarajevo</span></a>
+      <a href="089-matcha-maya-zagreb-coworking-customer-journey.html" class="post-card"><span class="post-num">089</span><span class="post-title">Zagreb</span></a>
+      <a href="090-matcha-maya-ljubljana-coworking-customer-journey.html" class="post-card"><span class="post-num">090</span><span class="post-title">Ljubljana</span></a>
+      <a href="091-matcha-maya-sofia-coworking-customer-journey.html" class="post-card"><span class="post-num">091</span><span class="post-title">Sofia</span></a>
+      <a href="092-matcha-maya-bucharest-coworking-customer-journey.html" class="post-card"><span class="post-num">092</span><span class="post-title">Bucharest</span></a>
+      <a href="093-matcha-maya-constanta-coworking-customer-journey.html" class="post-card"><span class="post-num">093</span><span class="post-title">Constanta</span></a>
+      <a href="094-matcha-maya-chisinau-coworking-customer-journey.html" class="post-card"><span class="post-num">094</span><span class="post-title">Chisinau</span></a>
+      <a href="095-matcha-maya-kiev-coworking-customer-journey.html" class="post-card"><span class="post-num">095</span><span class="post-title">Kiev</span></a>
+      <a href="096-matcha-maya-odessa-coworking-customer-journey.html" class="post-card"><span class="post-num">096</span><span class="post-title">Odessa</span></a>
+      <a href="097-matcha-maya-minsk-coworking-customer-journey.html" class="post-card"><span class="post-num">097</span><span class="post-title">Minsk</span></a>
+      <a href="098-matcha-maya-moscow-coworking-customer-journey.html" class="post-card"><span class="post-num">098</span><span class="post-title">Moscow</span></a>
+      <a href="099-matcha-maya-st-petersburg-coworking-customer-journey.html" class="post-card"><span class="post-num">099</span><span class="post-title">St Petersburg</span></a>
+      <a href="100-matcha-maya-novosibirsk-coworking-customer-journey.html" class="post-card"><span class="post-num">100</span><span class="post-title">Novosibirsk</span></a>
+      <a href="101-matcha-maya-yekaterinburg-coworking-customer-journey.html" class="post-card"><span class="post-num">101</span><span class="post-title">Yekaterinburg</span></a>
+      <a href="102-matcha-maya-kazan-coworking-customer-journey.html" class="post-card"><span class="post-num">102</span><span class="post-title">Kazan</span></a>
+      <a href="103-matcha-maya-nizhny-novgorod-coworking-customer-journey.html" class="post-card"><span class="post-num">103</span><span class="post-title">Nizhny Novgorod</span></a>
+      <a href="104-matcha-maya-samara-coworking-customer-journey.html" class="post-card"><span class="post-num">104</span><span class="post-title">Samara</span></a>
+      <a href="105-matcha-maya-rostov-coworking-customer-journey.html" class="post-card"><span class="post-num">105</span><span class="post-title">Rostov</span></a>
+      <a href="106-matcha-maya-volgograd-coworking-customer-journey.html" class="post-card"><span class="post-num">106</span><span class="post-title">Volgograd</span></a>
+      <a href="107-matcha-maya-sochi-coworking-customer-journey.html" class="post-card"><span class="post-num">107</span><span class="post-title">Sochi</span></a>
+      <a href="108-matcha-maya-krasnodar-coworking-customer-journey.html" class="post-card"><span class="post-num">108</span><span class="post-title">Krasnodar</span></a>
+      <a href="109-matcha-maya-vladivostok-coworking-customer-journey.html" class="post-card"><span class="post-num">109</span><span class="post-title">Vladivostok</span></a>
+      <a href="110-matcha-maya-irkutsk-coworking-customer-journey.html" class="post-card"><span class="post-num">110</span><span class="post-title">Irkutsk</span></a>
+      <a href="111-matcha-maya-ulan-bator-coworking-customer-journey.html" class="post-card"><span class="post-num">111</span><span class="post-title">Ulan Bator</span></a>
+      <a href="112-matcha-maya-almaty-coworking-customer-journey.html" class="post-card"><span class="post-num">112</span><span class="post-title">Almaty</span></a>
+      <a href="113-matcha-maya-astana-coworking-customer-journey.html" class="post-card"><span class="post-num">113</span><span class="post-title">Astana</span></a>
+      <a href="114-matcha-maya-tashkent-coworking-customer-journey.html" class="post-card"><span class="post-num">114</span><span class="post-title">Tashkent</span></a>
+      <a href="115-matcha-maya-bishkek-coworking-customer-journey.html" class="post-card"><span class="post-num">115</span><span class="post-title">Bishkek</span></a>
+      <a href="116-matcha-maya-dushanbe-coworking-customer-journey.html" class="post-card"><span class="post-num">116</span><span class="post-title">Dushanbe</span></a>
+      <a href="117-matcha-maya-ashgabat-coworking-customer-journey.html" class="post-card"><span class="post-num">117</span><span class="post-title">Ashgabat</span></a>
+      <a href="118-matcha-maya-baku-coworking-customer-journey.html" class="post-card"><span class="post-num">118</span><span class="post-title">Baku</span></a>
+      <a href="119-matcha-maya-yerevan-coworking-customer-journey.html" class="post-card"><span class="post-num">119</span><span class="post-title">Yerevan</span></a>
+      <a href="120-matcha-maya-tbilisi-coworking-customer-journey.html" class="post-card"><span class="post-num">120</span><span class="post-title">Tbilisi</span></a>
+      <a href="121-matcha-maya-london-coworking-customer-journey.html" class="post-card"><span class="post-num">121</span><span class="post-title">London</span></a>
+      <a href="122-matcha-maya-manchester-coworking-customer-journey.html" class="post-card"><span class="post-num">122</span><span class="post-title">Manchester</span></a>
+      <a href="123-matcha-maya-birmingham-coworking-customer-journey.html" class="post-card"><span class="post-num">123</span><span class="post-title">Birmingham</span></a>
+      <a href="124-matcha-maya-edinburgh-coworking-customer-journey.html" class="post-card"><span class="post-num">124</span><span class="post-title">Edinburgh</span></a>
+      <a href="125-matcha-maya-glasgow-coworking-customer-journey.html" class="post-card"><span class="post-num">125</span><span class="post-title">Glasgow</span></a>
+      <a href="126-matcha-maya-dublin-coworking-customer-journey.html" class="post-card"><span class="post-num">126</span><span class="post-title">Dublin</span></a>
+      <a href="127-matcha-maya-belfast-coworking-customer-journey.html" class="post-card"><span class="post-num">127</span><span class="post-title">Belfast</span></a>
+      <a href="128-matcha-maya-lisbon-coworking-customer-journey.html" class="post-card"><span class="post-num">128</span><span class="post-title">Lisbon</span></a>
+      <a href="129-matcha-maya-porto-coworking-customer-journey.html" class="post-card"><span class="post-num">129</span><span class="post-title">Porto</span></a>
+      <a href="130-matcha-maya-madrid-coworking-customer-journey.html" class="post-card"><span class="post-num">130</span><span class="post-title">Madrid</span></a>
+      <a href="131-matcha-maya-barcelona-coworking-customer-journey.html" class="post-card"><span class="post-num">131</span><span class="post-title">Barcelona</span></a>
+      <a href="132-matcha-maya-valencia-coworking-customer-journey.html" class="post-card"><span class="post-num">132</span><span class="post-title">Valencia</span></a>
+      <a href="133-matcha-maya-seville-coworking-customer-journey.html" class="post-card"><span class="post-num">133</span><span class="post-title">Seville</span></a>
+      <a href="134-matcha-maya-malaga-coworking-customer-journey.html" class="post-card"><span class="post-num">134</span><span class="post-title">Malaga</span></a>
+      <a href="135-matcha-maya-new-york-coworking-customer-journey.html" class="post-card"><span class="post-num">135</span><span class="post-title">New York</span></a>
+      <a href="136-matcha-maya-los-angeles-coworking-customer-journey.html" class="post-card"><span class="post-num">136</span><span class="post-title">Los Angeles</span></a>
+      <a href="137-matcha-maya-chicago-coworking-customer-journey.html" class="post-card"><span class="post-num">137</span><span class="post-title">Chicago</span></a>
+      <a href="138-matcha-maya-houston-coworking-customer-journey.html" class="post-card"><span class="post-num">138</span><span class="post-title">Houston</span></a>
+      <a href="139-matcha-maya-phoenix-coworking-customer-journey.html" class="post-card"><span class="post-num">139</span><span class="post-title">Phoenix</span></a>
+      <a href="140-matcha-maya-philadelphia-coworking-customer-journey.html" class="post-card"><span class="post-num">140</span><span class="post-title">Philadelphia</span></a>
+      <a href="141-matcha-maya-san-antonio-coworking-customer-journey.html" class="post-card"><span class="post-num">141</span><span class="post-title">San Antonio</span></a>
+      <a href="142-matcha-maya-san-diego-coworking-customer-journey.html" class="post-card"><span class="post-num">142</span><span class="post-title">San Diego</span></a>
+      <a href="143-matcha-maya-dallas-coworking-customer-journey.html" class="post-card"><span class="post-num">143</span><span class="post-title">Dallas</span></a>
+      <a href="144-matcha-maya-san-jose-coworking-customer-journey.html" class="post-card"><span class="post-num">144</span><span class="post-title">San Jose</span></a>
+      <a href="145-matcha-maya-austin-coworking-customer-journey.html" class="post-card"><span class="post-num">145</span><span class="post-title">Austin</span></a>
+      <a href="146-matcha-maya-jacksonville-coworking-customer-journey.html" class="post-card"><span class="post-num">146</span><span class="post-title">Jacksonville</span></a>
+      <a href="147-matcha-maya-fort-worth-coworking-customer-journey.html" class="post-card"><span class="post-num">147</span><span class="post-title">Fort Worth</span></a>
+      <a href="148-matcha-maya-columbus-coworking-customer-journey.html" class="post-card"><span class="post-num">148</span><span class="post-title">Columbus</span></a>
+      <a href="149-matcha-maya-charlotte-coworking-customer-journey.html" class="post-card"><span class="post-num">149</span><span class="post-title">Charlotte</span></a>
+      <a href="150-matcha-maya-san-francisco-coworking-customer-journey.html" class="post-card"><span class="post-num">150</span><span class="post-title">San Francisco</span></a>
+      <a href="151-matcha-maya-indianapolis-coworking-customer-journey.html" class="post-card"><span class="post-num">151</span><span class="post-title">Indianapolis</span></a>
+      <a href="152-matcha-maya-seattle-coworking-customer-journey.html" class="post-card"><span class="post-num">152</span><span class="post-title">Seattle</span></a>
+      <a href="153-matcha-maya-denver-coworking-customer-journey.html" class="post-card"><span class="post-num">153</span><span class="post-title">Denver</span></a>
+      <a href="154-matcha-maya-washington-dc-coworking-customer-journey.html" class="post-card"><span class="post-num">154</span><span class="post-title">Washington D.C.</span></a>
+      <a href="155-matcha-maya-boston-coworking-customer-journey.html" class="post-card"><span class="post-num">155</span><span class="post-title">Boston</span></a>
+      <a href="156-matcha-maya-el-paso-coworking-customer-journey.html" class="post-card"><span class="post-num">156</span><span class="post-title">El Paso</span></a>
+      <a href="157-matcha-maya-nashville-coworking-customer-journey.html" class="post-card"><span class="post-num">157</span><span class="post-title">Nashville</span></a>
+      <a href="158-matcha-maya-detroit-coworking-customer-journey.html" class="post-card"><span class="post-num">158</span><span class="post-title">Detroit</span></a>
+      <a href="159-matcha-maya-oklahoma-city-coworking-customer-journey.html" class="post-card"><span class="post-num">159</span><span class="post-title">Oklahoma City</span></a>
+      <a href="160-matcha-maya-portland-coworking-customer-journey.html" class="post-card"><span class="post-num">160</span><span class="post-title">Portland</span></a>
+      <a href="161-matcha-maya-las-vegas-coworking-customer-journey.html" class="post-card"><span class="post-num">161</span><span class="post-title">Las Vegas</span></a>
+      <a href="162-matcha-maya-memphis-coworking-customer-journey.html" class="post-card"><span class="post-num">162</span><span class="post-title">Memphis</span></a>
+      <a href="163-matcha-maya-louisville-coworking-customer-journey.html" class="post-card"><span class="post-num">163</span><span class="post-title">Louisville</span></a>
+      <a href="164-matcha-maya-baltimore-coworking-customer-journey.html" class="post-card"><span class="post-num">164</span><span class="post-title">Baltimore</span></a>
+      <a href="165-matcha-maya-milwaukee-coworking-customer-journey.html" class="post-card"><span class="post-num">165</span><span class="post-title">Milwaukee</span></a>
+      <a href="166-matcha-maya-albuquerque-coworking-customer-journey.html" class="post-card"><span class="post-num">166</span><span class="post-title">Albuquerque</span></a>
+      <a href="167-matcha-maya-tucson-coworking-customer-journey.html" class="post-card"><span class="post-num">167</span><span class="post-title">Tucson</span></a>
+      <a href="168-matcha-maya-fresno-coworking-customer-journey.html" class="post-card"><span class="post-num">168</span><span class="post-title">Fresno</span></a>
+      <a href="169-matcha-maya-sacramento-coworking-customer-journey.html" class="post-card"><span class="post-num">169</span><span class="post-title">Sacramento</span></a>
+      <a href="170-matcha-maya-kansas-city-coworking-customer-journey.html" class="post-card"><span class="post-num">170</span><span class="post-title">Kansas City</span></a>
+      <a href="171-matcha-maya-mesa-coworking-customer-journey.html" class="post-card"><span class="post-num">171</span><span class="post-title">Mesa</span></a>
+      <a href="172-matcha-maya-atlanta-coworking-customer-journey.html" class="post-card"><span class="post-num">172</span><span class="post-title">Atlanta</span></a>
+      <a href="173-matcha-maya-omaha-coworking-customer-journey.html" class="post-card"><span class="post-num">173</span><span class="post-title">Omaha</span></a>
+      <a href="174-matcha-maya-colorado-springs-coworking-customer-journey.html" class="post-card"><span class="post-num">174</span><span class="post-title">Colorado Springs</span></a>
+      <a href="175-matcha-maya-raleigh-coworking-customer-journey.html" class="post-card"><span class="post-num">175</span><span class="post-title">Raleigh</span></a>
+      <a href="176-matcha-maya-long-beach-coworking-customer-journey.html" class="post-card"><span class="post-num">176</span><span class="post-title">Long Beach</span></a>
+      <a href="177-matcha-maya-virginia-beach-coworking-customer-journey.html" class="post-card"><span class="post-num">177</span><span class="post-title">Virginia Beach</span></a>
+      <a href="178-matcha-maya-miami-coworking-customer-journey.html" class="post-card"><span class="post-num">178</span><span class="post-title">Miami</span></a>
+      <a href="179-matcha-maya-oakland-coworking-customer-journey.html" class="post-card"><span class="post-num">179</span><span class="post-title">Oakland</span></a>
+      <a href="180-matcha-maya-minneapolis-coworking-customer-journey.html" class="post-card"><span class="post-num">180</span><span class="post-title">Minneapolis</span></a>
+      <a href="181-matcha-maya-tulsa-coworking-customer-journey.html" class="post-card"><span class="post-num">181</span><span class="post-title">Tulsa</span></a>
+      <a href="182-matcha-maya-bakersfield-coworking-customer-journey.html" class="post-card"><span class="post-num">182</span><span class="post-title">Bakersfield</span></a>
+      <a href="183-matcha-maya-tampa-coworking-customer-journey.html" class="post-card"><span class="post-num">183</span><span class="post-title">Tampa</span></a>
+      <a href="184-matcha-maya-wichita-coworking-customer-journey.html" class="post-card"><span class="post-num">184</span><span class="post-title">Wichita</span></a>
+      <a href="185-matcha-maya-arlington-coworking-customer-journey.html" class="post-card"><span class="post-num">185</span><span class="post-title">Arlington</span></a>
+      <a href="186-matcha-maya-aurora-coworking-customer-journey.html" class="post-card"><span class="post-num">186</span><span class="post-title">Aurora</span></a>
+      <a href="187-matcha-maya-new-orleans-coworking-customer-journey.html" class="post-card"><span class="post-num">187</span><span class="post-title">New Orleans</span></a>
+      <a href="188-matcha-maya-cleveland-coworking-customer-journey.html" class="post-card"><span class="post-num">188</span><span class="post-title">Cleveland</span></a>
+      <a href="189-matcha-maya-anaheim-coworking-customer-journey.html" class="post-card"><span class="post-num">189</span><span class="post-title">Anaheim</span></a>
+      <a href="190-matcha-maya-honolulu-coworking-customer-journey.html" class="post-card"><span class="post-num">190</span><span class="post-title">Honolulu</span></a>
+      <a href="191-matcha-maya-toronto-coworking-customer-journey.html" class="post-card"><span class="post-num">191</span><span class="post-title">Toronto</span></a>
+      <a href="192-matcha-maya-montreal-coworking-customer-journey.html" class="post-card"><span class="post-num">192</span><span class="post-title">Montreal</span></a>
+      <a href="193-matcha-maya-vancouver-coworking-customer-journey.html" class="post-card"><span class="post-num">193</span><span class="post-title">Vancouver</span></a>
+      <a href="194-matcha-maya-calgary-coworking-customer-journey.html" class="post-card"><span class="post-num">194</span><span class="post-title">Calgary</span></a>
+      <a href="195-matcha-maya-edmonton-coworking-customer-journey.html" class="post-card"><span class="post-num">195</span><span class="post-title">Edmonton</span></a>
+      <a href="196-matcha-maya-ottawa-coworking-customer-journey.html" class="post-card"><span class="post-num">196</span><span class="post-title">Ottawa</span></a>
+      <a href="197-matcha-maya-quebec-city-coworking-customer-journey.html" class="post-card"><span class="post-num">197</span><span class="post-title">Quebec City</span></a>
+      <a href="198-matcha-maya-winnipeg-coworking-customer-journey.html" class="post-card"><span class="post-num">198</span><span class="post-title">Winnipeg</span></a>
+      <a href="199-matcha-maya-sydney-coworking-customer-journey.html" class="post-card"><span class="post-num">199</span><span class="post-title">Sydney</span></a>
+      <a href="200-matcha-maya-melbourne-coworking-customer-journey.html" class="post-card"><span class="post-num">200</span><span class="post-title">Melbourne</span></a>
+      <a href="201-matcha-maya-brisbane-coworking-customer-journey.html" class="post-card"><span class="post-num">201</span><span class="post-title">Brisbane</span></a>
+      <a href="202-matcha-maya-perth-coworking-customer-journey.html" class="post-card"><span class="post-num">202</span><span class="post-title">Perth</span></a>
+      <a href="203-matcha-maya-adelaide-coworking-customer-journey.html" class="post-card"><span class="post-num">203</span><span class="post-title">Adelaide</span></a>
+      <a href="204-matcha-maya-auckland-coworking-customer-journey.html" class="post-card"><span class="post-num">204</span><span class="post-title">Auckland</span></a>
+      <a href="205-matcha-maya-wellington-coworking-customer-journey.html" class="post-card"><span class="post-num">205</span><span class="post-title">Wellington</span></a>
+      <a href="206-matcha-maya-christchurch-coworking-customer-journey.html" class="post-card"><span class="post-num">206</span><span class="post-title">Christchurch</span></a>
+      <a href="207-matcha-maya-cape-town-coworking-customer-journey.html" class="post-card"><span class="post-num">207</span><span class="post-title">Cape Town</span></a>
+      <a href="208-matcha-maya-johannesburg-coworking-customer-journey.html" class="post-card"><span class="post-num">208</span><span class="post-title">Johannesburg</span></a>
+      <a href="209-matcha-maya-durban-coworking-customer-journey.html" class="post-card"><span class="post-num">209</span><span class="post-title">Durban</span></a>
+      <a href="210-matcha-maya-nairobi-coworking-customer-journey.html" class="post-card"><span class="post-num">210</span><span class="post-title">Nairobi</span></a>
+      <a href="211-matcha-maya-lagos-coworking-customer-journey.html" class="post-card"><span class="post-num">211</span><span class="post-title">Lagos</span></a>
+      <a href="212-matcha-maya-casablanca-coworking-customer-journey.html" class="post-card"><span class="post-num">212</span><span class="post-title">Casablanca</span></a>
+      <a href="213-matcha-maya-tunis-coworking-customer-journey.html" class="post-card"><span class="post-num">213</span><span class="post-title">Tunis</span></a>
+      <a href="214-matcha-maya-buenos-aires-coworking-customer-journey.html" class="post-card"><span class="post-num">214</span><span class="post-title">Buenos Aires</span></a>
+      <a href="215-matcha-maya-santiago-coworking-customer-journey.html" class="post-card"><span class="post-num">215</span><span class="post-title">Santiago</span></a>
+      <a href="216-matcha-maya-bogota-coworking-customer-journey.html" class="post-card"><span class="post-num">216</span><span class="post-title">Bogota</span></a>
+      <a href="217-matcha-maya-lima-coworking-customer-journey.html" class="post-card"><span class="post-num">217</span><span class="post-title">Lima</span></a>
+      <a href="218-matcha-maya-rio-de-janeiro-coworking-customer-journey.html" class="post-card"><span class="post-num">218</span><span class="post-title">Rio de Janeiro</span></a>
+      <a href="219-matcha-maya-montevideo-coworking-customer-journey.html" class="post-card"><span class="post-num">219</span><span class="post-title">Montevideo</span></a>
+      <a href="220-matcha-maya-quito-coworking-customer-journey.html" class="post-card"><span class="post-num">220</span><span class="post-title">Quito</span></a>
+    </div>
   </div>
+
+  <script>
+    function filterPosts() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.getElementsByClassName('post-card');
+
+      for (let i = 0; i < cards.length; i++) {
+        const text = cards[i].innerText.toLowerCase();
+        if (text.includes(input)) {
+          cards[i].style.display = 'flex';
+        } else {
+          cards[i].style.display = 'none';
+        }
+      }
+    }
+  </script>
 </body>
 </html>
